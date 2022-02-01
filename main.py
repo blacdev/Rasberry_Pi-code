@@ -118,6 +118,7 @@ def outgoing_traffic():
         cam_2.get_image()
     )  #  This is where the command for taking pictures will seat . The name of the picture will be the speed
     snap_picture.stop()
+    window.blit(image, (0, 0))
     sensors_1 = GPIO.input(echo_3)
     sensors_2 = GPIO.input(echo_4)
 
